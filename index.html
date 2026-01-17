@@ -229,17 +229,29 @@
 
   <!-- About Section -->
   <section id="about" class="bg-light" style="padding: 4rem 0;">
-    <div class="container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 35px;">
-      <div style="flex: 0 0 auto;">
-        <img src="assets/professionalphoto.JPG" alt="A.M Ansari" class="rounded shadow" style="width: 250px; height: 250px; object-fit: cover;">
-      </div>
-      <div style="flex: 1 1 400px; min-width: 300px;">
-        <h2>About <span style="color:#1d4ed8;">A.M Ansari</span></h2>
-        <p>Professional Garment Pattern Maker with 22 years of experience, working with designers, brands, factories, startups, and individual clients worldwide. Creates manual and CAD patterns for menswear, womenswear, and kidswear.</p>
-        <p>Offers in-person, one-on-one training in garment pattern making for beginners and advanced learners using manual methods and Richpeace CAD software.</p>
-      </div>
+  <div class="container about-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 35px;">
+    <div style="flex: 1 1 400px; min-width: 300px;">
+      <h2>About <span style="color:#1d4ed8;">A.M Ansari</span></h2>
+      <p>Professional Garment Pattern Maker with 22 years of experience, working with designers, brands, factories, startups, and individual clients worldwide. Creates manual and CAD patterns for menswear, womenswear, and kidswear.</p>
+      <p>Offers in-person, one-on-one training in garment pattern making for beginners and advanced learners using manual methods and Richpeace CAD software.</p>
     </div>
-  </section>
+    <div style="flex: 0 0 auto;">
+      <img src="assets/professionalphoto.JPG" alt="A.M Ansari" class="rounded shadow" style="width: 250px; height: 250px; object-fit: cover;">
+    </div>
+  </div>
+</section>
+
+<style>
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* heading + text first, photo below */
+    text-align: center;
+  }
+  .about-container img {
+    margin-top: 20px;
+  }
+}
+</style>
 
   <!-- CTA Section -->
   <section class="text-center" style="background:linear-gradient(90deg,#1d4ed8,#6366f1); color:white;">
