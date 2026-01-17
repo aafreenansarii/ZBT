@@ -312,32 +312,53 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
-<!-- Floating Navigation (Grey & Compact) -->
-<nav id="floating-nav" style="
+<!-- Floating Navigation -->
+<style>
+  #floating-nav {
     position: fixed;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
     background-color: #888; /* Grey background */
     border-radius: 0 6px 6px 0;
-    padding: 5px 8px;
+    padding: 5px 0;
     z-index: 1000;
-">
-  <ul style="list-style:none; margin:0; padding:0;">
-    <li style="margin:5px 0;">
-      <a href="#about" style="color:white; text-decoration:none; display:block; padding:6px 10px;">About</a>
-    </li>
-    <li style="margin:5px 0;">
-      <a href="#training-section" style="color:white; text-decoration:none; display:block; padding:6px 10px;">Training</a>
-    </li>
-    <li style="margin:5px 0;">
-      <a href="#freelance-section" style="color:white; text-decoration:none; display:block; padding:6px 10px;">Freelance</a>
-    </li>
-    <li style="margin:5px 0;">
-      <a href="#contact" style="color:white; text-decoration:none; display:block; padding:6px 10px;">Contact</a>
-    </li>
+  }
+
+  #floating-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #floating-nav li {
+    margin: 4px 0;
+  }
+
+  #floating-nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s;
+  }
+
+  #floating-nav a:hover {
+    background-color: #555;
+  }
+</style>
+
+<nav id="floating-nav">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#training-section">Training</a></li>
+    <li><a href="#freelance-section">Freelance</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
+
 
 </body>
 </html>
